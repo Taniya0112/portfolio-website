@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO WEBSITE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="wrapper">
+
+        <div class="container">
+            <div class="navbar">
+
+                <div class="logo-container">
+                    <!-- <img src="data:image/jpeg;base64,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" alt="T logo" height="50px" width="50px"> -->
+                    <div class="logo-letter"><h2>T</h2></div>
+                    <div class="logo-text">aniya Meghani</div>
+                </div>
+
+                <div class="nav-items">
+                    <div><a href="#projects">Projects</a></div>
+                    <div><a href="#skills">Skills</a></div>
+                    <div><a href="#contactme">Contact Me</a></div>
+                </div>
+            </div>
+       
+
+        <div class="hero-section">
+            <div class="faded-text">Taniya Meghani</div>
+            <div class="hero-section-left">
+
+                <div class="hero-section-heading">Hii! Taniya Meghani</div>
+
+                <div class="hero-section-heading hero-section-subheading">I am a <span class="role"></span></div>
+
+                <div class="hero-section-description">I'am a Software Developer and here is my portfolio website.
+                    Here you'll learn about my journey as a software developer.</div>
+
+               <div class="btn-pink" id="btn">Hire Me</div>    
+               
+            </div>
+            
+            <div class="hero-section-right">
+                <div class="absolute icons icon-dots">
+                    <img src="images/userAsset/dots.png" alt="dots">
+                </div>
+                <div class="absolute icons icon-cube">
+                    <img src="images/userAsset/cube.png" alt="cube">
+                </div>
+                <div class="absolute icons icon-circle">   
+                    <img src="images/userAsset/circle.png" alt="circle">
+                </div>
+                <div class="absolute icons icon-zigzag">
+                    <img src="images/userAsset/zigzags.png" alt="zigzag">
+                </div>
+                <div class="absolute icons icon-plus">
+                    <img src="images/userAsset/plus.png" alt="plus">
+                </div>
+                <div class="userImage">
+                    <img src="images/userAsset/profile-pic.png" alt="userImage" width="320px" height="320px">
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="project-section" id="projects">
+
+            <h2 class="page-header">Projects</h2>
+
+            <div class="project-container">
+
+                <div class="project-card" id="project1">
+                    <div class="project-number project-number-right">01</div>
+                    <div class="project-content project-content-left">
+                        <div class="project-skills-container">
+                            <img class="project-skill" src="images/stack/HTML.png" alt="Html icon">
+                            <img class="project-skill" src="images/stack/CSS.png" alt="Css icon">
+                            <!-- <img class="project-skill" src="images/stack/Javascript.svg" alt="Javascript icon">
+                            <img class="project-skill" src="images/stack/Express.png" alt="Express icon">
+                            <img class="project-skill" src="images/stack/NextJsCircle.png" alt="Next js circle icon">
+                            <img class="project-skill" src="images/stack/Tailwind.png" alt="Tailwind icon">
+                            <img class="project-skill" src="images/stack/NodeJs.svg" alt="Node js icon">
+                            <img class="project-skill" src="images/stack/MongoDB.svg" alt="Mongo DB icon">
+                            <img class="project-skill" src="images/stack/Redux.svg" alt="Redux icon">
+                            <img class="project-skill" src="images/stack/Vercel.svg" alt="Vercel icon"> -->
+                        </div>
+
+                        <h2 class="project-heading">Portfolio Website</h2>
+
+                        <div class="project-summary">This is my personal creative portfolio created using HTML and CSS.</div>
+
+                        <div class="btn-group">
+                            <button class="btn-pink btn-project">Read More</button>
+                            <a href="">
+                                <i title="GithubLink" class="fa-brands fa-github icon"></i>
+                            </a>
+                            <a href="">
+                                <i title="LiveLink" class="fa-solid fa-link icon"> </i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" id="project2">
+                    <div class="project-number project-number-left">02</div>
+                    <div class="project-content project-content-right">
+                        <div class="project-skills-container">
+                            <img class="project-skill" src="images/stack/HTML.png" alt="Html icon">
+                            <img class="project-skill" src="images/stack/CSS.png" alt="Css icon">
+                            <!-- <img class="project-skill" src="images/stack/Javascript.svg" alt="Javascript icon">
+                            <img class="project-skill" src="images/stack/Express.png" alt="Express icon">
+                            <img class="project-skill" src="images/stack/NextJsCircle.png" alt="Next js circle icon">
+                            <img class="project-skill" src="images/stack/Tailwind.png" alt="Tailwind icon">
+                            <img class="project-skill" src="images/stack/NodeJs.svg" alt="Node js icon">
+                            <img class="project-skill" src="images/stack/MongoDB.svg" alt="Mongo DB icon">
+                            <img class="project-skill" src="images/stack/Redux.svg" alt="Redux icon">
+                            <img class="project-skill" src="images/stack/Vercel.svg" alt="Vercel icon"> -->
+                        </div>
+
+                        <h2 class="project-heading">Image Gallery Project</h2>
+
+                        <div class="project-summary">This is an Image Gallery project using the properties of HTML and CSS.</div>
+
+                        <div class="btn-group">
+                            <button class="btn-pink btn-project">Read More</button>
+                            <a href="">
+                                <i title="GithubLink" class="fa-brands fa-github icon"></i>
+                            </a>
+                            <a href="">
+                                <i title="LiveLink" class="fa-solid fa-link icon"> </i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" id="project3">
+                    <div class="project-number project-number-right">03</div>
+                    <div class="project-content project-content-left">
+                        <div class="project-skills-container">
+                            <img class="project-skill" src="images/stack/java icon.png" alt="Java icon">
+                            <img class="project-skill" src="images/stack/mysql icon.png" alt="Mysql icon">
+                            <!-- <img class="project-skill" src="images/stack/Javascript.svg" alt="Javascript icon">
+                            <img class="project-skill" src="images/stack/Express.png" alt="Express icon">
+                            <img class="project-skill" src="images/stack/NextJsCircle.png" alt="Next js circle icon">
+                            <img class="project-skill" src="images/stack/Tailwind.png" alt="Tailwind icon">
+                            <img class="project-skill" src="images/stack/NodeJs.svg" alt="Node js icon">
+                            <img class="project-skill" src="images/stack/MongoDB.svg" alt="Mongo DB icon">
+                            <img class="project-skill" src="images/stack/Redux.svg" alt="Redux icon">
+                            <img class="project-skill" src="images/stack/Vercel.svg" alt="Vercel icon"> -->
+                        </div>
+
+                        <h2 class="project-heading">Employee Management System</h2>
+
+                        <div class="project-summary">This is an Employee Management System using all the CRUD functionalities.
+                            I have used Java Swing, JDBC and MySQL.
+                        </div>
+
+                        <div class="btn-group">
+                            <button class="btn-pink btn-project">Read More</button>
+                            <a href="">
+                                <i title="GithubLink" class="fa-brands fa-github icon"></i>
+                            </a>
+                            <a href="">
+                                <i title="LiveLink" class="fa-solid fa-link icon"> </i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" id="project4">
+                    <div class="project-number project-number-left">04</div>
+                    <div class="project-content project-content-right">
+                        <div class="project-skills-container">
+                            <img class="project-skill" src="images/stack/HTML.png" alt="Html icon">
+                            <img class="project-skill" src="images/stack/CSS.png" alt="Css icon">
+                            <!-- <img class="project-skill" src="images/stack/Javascript.svg" alt="Javascript icon">
+                            <img class="project-skill" src="images/stack/Express.png" alt="Express icon">
+                            <img class="project-skill" src="images/stack/NextJsCircle.png" alt="Next js circle icon">
+                            <img class="project-skill" src="images/stack/Tailwind.png" alt="Tailwind icon">
+                            <img class="project-skill" src="images/stack/NodeJs.svg" alt="Node js icon">
+                            <img class="project-skill" src="images/stack/MongoDB.svg" alt="Mongo DB icon">
+                            <img class="project-skill" src="images/stack/Redux.svg" alt="Redux icon">
+                            <img class="project-skill" src="images/stack/Vercel.svg" alt="Vercel icon"> -->
+                        </div>
+
+                        <h2 class="project-heading">Parallex Website</h2>
+
+                        <div class="project-summary">I have made a Parallex Website using HTML and CSS. <br>It basically shows adventures
+                            and more information regarding this.
+                        </div>
+
+                        <div class="btn-group">
+                            <button class="btn-pink btn-project">Read More</button>
+                            <a href="">
+                                <i title="GithubLink" class="fa-brands fa-github icon"></i>
+                            </a>
+                            <a href="">
+                                <i title="LiveLink" class="fa-solid fa-link icon"> </i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container skills-container" id="skills">
+            <div class="skills-fade-text">Skills</div>
+
+            <div class="skill-container-left">
+
+                <h2 class="skills-heading">
+                    <span class="caps">M</span>e and
+                    <br>
+                    My Skills
+                </h2>
+
+                <div class="skills-subheading">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt id mollitia velit voluptates amet delectus eos recusandae nobis dolores quidem temporibus corporis exercitationem in, porro fugit beatae fuga reiciendis ea neque, aliquam unde earum cumque fugiat labore. Quisquam, rerum magni?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, sapiente aut. Est, neque sint iusto laudantium alias mollitia minus recusandae, laboriosam odit debitis illum sapiente, nesciunt aspernatur quod harum blanditiis ut omnis aut voluptas veniam fugit inventore ipsa. In, placeat.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At ratione, consequuntur dolor iure doloremque recusandae odio praesentium molestias nostrum eligendi qui accusamus aspernatur, explicabo laudantium minus sunt veritatis fugiat ipsa nobis vitae accusantium earum voluptates asperiores alias. Nobis, sapiente eum!</p>
+                </div>
+            </div>
+
+            <div class="skill-container-right">
+
+                <img src="images/userAsset/blob vector.png" class="blob-style" alt="blob vector">
+                
+                <img src="images/stack/dbms icon.png" class="skills-logo" alt="">
+                <img src="images/stack/jdbc icon.jpeg" class="skills-logo" alt="">
+                <img src="images/stack/java icon.png" class="skills-logo" alt="">
+                <img src="images/stack/algorithm icon.jpeg" class="skills-logo" alt="">
+                <img src="images/stack/HTML.png" class="skills-logo" alt="">
+                <img src="images/stack/Git.svg" class="skills-logo" alt="">
+                <img src="images/stack/ds icon.png" class="skills-logo" alt="">
+                <img src="images/stack/Github.svg" class="skills-logo" alt="">
+                <img src="images/stack/salesforce icon.png" class="skills-logo" alt="">
+                <img src="images/stack/Saas.svg" class="skills-logo" alt="">
+                <img src="images/stack/Bootstrap.svg" class="skills-logo" alt="">
+                <img src="images/stack/CSS.png" class="skills-logo" alt="">
+                <img src="images/stack/mysql icon.png" class="skills-logo" alt="">
+                <img src="images/stack/oops icon.png" class="skills-logo" alt="">
+                <img src="images/stack/os icon.png" class="skills-logo" alt="">
+                
+            </div>
+        </div>
+
+        <div class="contactUs" id="contactme">
+
+            <div class="container">
+
+                <h1 class="contactus-heading">Contact Me</h1>
+
+                <h3 class="contactus-subheading">Questions, Thoughts, Or Just Want To Say Hello?</h3>
+
+                <div class="contactus-form-container">
+
+                    <form class="form" action="">
+                        <div class="formfield-container">
+
+                            <input class="formfield" type="text" name="name" id="" placeholder="Enter Your Name">
+
+                            <input class="formfield" type="email" name="email" id="" placeholder="Enter Your Email Address">
+
+                            <input class="formfield" type="text" name="subject" id="" placeholder="Enter Your Subject">
+
+                            <textarea name="message" id="" cols="30" rows="10" class="formfield formfield-textarea" placeholder="Enter Your Message"></textarea>
+
+                        </div>
+
+                        <div>
+                            <button type="submit" class="btn-pink" id="submit-btn">
+                                Send Message <i class="submit-icon fa-solid fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+
+            <div class="container">
+
+                <div class="footer-wrapper">
+
+                    <div class="footer-faded-text"> Taniya Meghani</div>
+
+                    <div class="link-wrapper">
+                        <div>
+                            <a href="#projects">Projects</a>
+                        </div>
+                        <div>
+                            <a href="#skills">Skills</a>
+                        </div>
+                        <div>
+                            <a href="#contactme">Contact Me</a>
+                        </div>
+                    </div>
+
+                    <div class="icon-wrapper">
+                        <i class="fa-brands fa-linkedin icon"></i>
+                        <i class="fa-brands fa-github icon"></i>
+                        <i class="fa-brands fa-twitter icon"></i>
+                        <i class="fa-brands fa-instagram icon"></i>
+                        <i class="fa-brands fa-envelope icon"></i>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script>
+        var typeData= new Typed(".role",{
+            strings: [
+                "Full Stack Developer",
+                "Web Developer",
+                "UI-UX Designer",
+                "Backend Developer",
+                "Coder",
+            ],
+            loop: true,
+            typeSpeed:100,
+            backSpeed:80,
+            backDelay:1000,
+        });
+    </script>
+</body>
+</html>
